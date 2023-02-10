@@ -49,26 +49,50 @@ h3 {
 
 /* ul/ol list style formatting */
 .nav {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
+/* .nav .nav-list:not(:last-child) {
+    margin-right: 40px;
+} */
+.nav .nav-list+.nav-list {
+    margin-left: 40px;
+}
+
 .nav-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
+
+
 }
 
-.adress {
+.address {
+    display: flex;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
+.address .address-list:not(:last-child) {
+    margin-right: 40px;
+}
+
+
 .address-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -201,7 +225,14 @@ h3 {
 /* Portfolio html */
 /* section_1_portfolio */
 .filter {
+    display: flex;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+}
+
+.filter .item+.item {
+    margin-left: 24;
 }
 
 .filter-btn {
