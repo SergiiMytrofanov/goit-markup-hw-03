@@ -13,6 +13,7 @@
 }
 
 /* WEBSTUDIO and Portfolio html styles fprmatting  */
+/* Utilites */
 body {
     /* main text formatting */
     color: var(--primary-text-color);
@@ -27,9 +28,22 @@ h3 {
     margin-top: 0;
 }
 
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
 /* header */
+.main-nav {
+    display: flex;
+    align-items: center;
+
+}
 
 /* logo WebStudio - in all html files */
+
 .logo {
     font-family: 'Raleway', normal;
     font-weight: 800;
@@ -47,17 +61,13 @@ h3 {
 
 }
 
-/* ul/ol list style formatting */
+/* navigation bar */
 .nav {
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    margin-left: 76px;
 }
 
-/* .nav .nav-list:not(:last-child) {
-    margin-right: 40px;
-} */
+
 .nav .nav-list+.nav-list {
     margin-left: 40px;
 }
@@ -78,13 +88,11 @@ h3 {
 
 .address {
     display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    margin-left: 330px;
 }
 
-.address .address-list:not(:last-child) {
-    margin-right: 40px;
+.address .address-list+.address-list {
+    margin-left: 40px;
 }
 
 
@@ -158,11 +166,7 @@ h3 {
 }
 
 /* section 2 */
-.features {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+.features {}
 
 .section-title {
     font-size: 36px;
@@ -194,11 +198,7 @@ h3 {
     background-color: var(--background-primary);
 }
 
-.team-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+.team-list {}
 
 .team-desc {
     line-height: 1.5;
@@ -226,9 +226,6 @@ h3 {
 /* section_1_portfolio */
 .filter {
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 }
 
 .filter .item+.item {
@@ -238,6 +235,7 @@ h3 {
 .filter-btn {
     text-align: center;
     display: inline-block;
+    width: auto;
     min-width: 69px;
     border-radius: 4px;
     padding: 12px 24px 12px 24px;
@@ -249,6 +247,8 @@ h3 {
     border: 1px solid #E7E9FC;
 }
 
+
+
 .filter-btn:hover,
 .filter-btn:focus,
 .filter-btn:active {
@@ -259,11 +259,13 @@ h3 {
 }
 
 /* products examples */
-.filter-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+/* .filter-list {
+    display: flex;
 }
+
+.filter-list .list+.list {
+    margin-left: 24;
+} */
 
 .filter-list-item {
     line-height: 1.5;
