@@ -45,7 +45,6 @@ h6 {
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
-    /* padding: 120px 0; */
 }
 
 .list {
@@ -56,6 +55,7 @@ h6 {
 
 
 /* header */
+
 .nav {
     display: flex;
     align-items: center;
@@ -82,12 +82,12 @@ h6 {
 }
 
 /* navigation bar */
+
 .nav-list {
     display: flex;
     margin-left: 76px;
     margin-right: auto;
 }
-
 
 .nav-list .nav-item+.nav-item {
     margin-left: 40px;
@@ -112,7 +112,6 @@ h6 {
 .address .address-list+.address-list {
     margin-left: 40px;
 }
-
 
 .address-link {
     display: block;
@@ -175,6 +174,24 @@ h6 {
 }
 
 /* section 2 */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 72px;
+
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -189,20 +206,6 @@ h6 {
     margin: 0;
 }
 
-.section-title {
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
-
-.section-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
 .features-desc {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -210,12 +213,6 @@ h6 {
 }
 
 /* section 3 */
-
-.section-title {
-    margin: 0;
-    text-align: center;
-    margin-bottom: 72px;
-}
 
 .product-list {
     display: flex;
@@ -232,22 +229,23 @@ h6 {
 }
 
 /* section 4 */
-.team-b-color {
+
+.team {
     background-color: var(--background-primary);
 }
 
-.team {
+.team-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.team-list {
+.team-item {
     width: 264px;
     margin-right: 24px;
     background-color: var(--text-white);
 }
 
-.team-list:nth-child(4n) {
+.team-item:nth-child(4n) {
     margin: 0;
 }
 
@@ -257,8 +255,8 @@ h6 {
     color: var(--text-color-secondary);
 }
 
-.team .section-subtitle,
-.team .team-desc {
+.team-list .section-subtitle,
+.team-list .team-desc {
     text-align: center;
 }
 
@@ -271,11 +269,10 @@ h6 {
 }
 
 /* logo footer */
+
 .accent-foot {
     color: var(--background-primary);
 }
-
-
 
 .footer-text {
     width: 264px;
@@ -286,7 +283,9 @@ h6 {
 }
 
 /* Portfolio html */
-/* section_1_portfolio */
+
+/* section 1 */
+
 .filter {
     padding-top: 96px;
     padding-bottom: 72px;
@@ -340,6 +339,18 @@ h6 {
     margin-bottom: 48px;
 }
 
+/* MENTOR  я помітив що на макеті 
+рисунок перекриває бордер (бордер товщиною в 1 піксель) 
+з правого боку, тому додав 2 пікселя до ширини рамки 
+Взагалі, як правильно в такій ситуації?  
+див ->  width: 362px;*/
+.filter-list-box {
+    width: 362px;
+    border: 1px solid #E7E9FC;
+}
+
+
+
 .filter-list-item:nth-child(3n) {
     margin: 0;
 }
@@ -348,7 +359,15 @@ h6 {
     margin-bottom: 0;
 }
 
-*/ .filter-description {
+.filter-list-item .section-subtitle {
+    margin: 32px auto 8px 16px;
+}
+
+.filter-list-item .filter-description {
+    margin: 0 auto 32px 16px;
+}
+
+.filter-description {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color-secondary);
