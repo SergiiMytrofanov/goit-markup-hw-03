@@ -56,6 +56,10 @@ h6 {
 
 /* header */
 
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -348,6 +352,16 @@ h6 {
     width: 362px;
     border: 1px solid #E7E9FC;
 }
+
+/*MENTOR B17 У картках на сторінці Портфоліо 
+    є рамка (властивість border),
+    але тільки у нижній 
+    частині картки. - але це не так як в макеті */
+/*    
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #E7E9FC;
+} */
 
 
 
